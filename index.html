@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&family=Roboto+Slab:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <title>Aurora test</title>
+</head>
+<body>
+
+<div class="main-container popup__closer">
+    <!--HEADER-->
+    <header class="header__wrapper">
+        <div class="header__logo">
+            <img src="./img/vivat-logo.png"/>
+        </div>
+        <button class="burger__button only__mobile">
+            <img src="img/svg/burger-btn.svg">
+        </button>
+        <div class="header__contacts-desktop only__desktop">
+            <address class="contacts__wrapper">
+                <a class="contacts__location" href="#">
+                    <img src="img/svg/map.svg"/>
+                    <span class="location__city">Ховрино </span><span>Круглосуточно</span>
+                </a>
+                <a class="contacts__number" href="#">
+                    <span>+7 (495) 980-66-22</span>
+                </a>
+            </address>
+
+            <address class="contacts__wrapper">
+                <a class="contacts__location" href="#">
+                    <img src="img/svg/map.svg"/>
+                    <span class="location__city">Измайлово </span><span>Круглосуточно</span>
+                </a>
+                <a class="contacts__number" href="#">
+                    <span>+7 (495) 730-55-66</span>
+                </a>
+            </address>
+
+            <address class="contacts__wrapper">
+                <a class="contacts__location" href="#">
+                    <img src="img/svg/map.svg"/>
+                    <span class="location__city">Мытищи </span><span>Круглосуточно</span>
+                </a>
+                <a class="contacts__number" href="#">
+                    <span>+7 (495) 500-40-40</span>
+                </a>
+            </address>
+
+            <address class="contacts__wrapper">
+                <a class="contacts__location" href="#">
+                    <img src="img/svg/map.svg"/>
+                    <span class="location__city">Хор.-Мневники </span><span>Круглосуточно</span>
+                </a>
+                <a class="contacts__number" href="#">
+                    <span>+7 (495) 980-66-22</span>
+                </a>
+            </address>
+        </div>
+        <div class="header__contacts-mobile only__mobile">
+            <button class="header__contacts-button">
+                <img src="img/svg/phone.svg"/>
+            </button>
+            <button class="header__contacts-button">
+                <img src="img/svg/geo.svg"/>
+            </button>
+            <button class="header__contacts-button">
+                <img src="img/svg/contact.svg"/>
+            </button>
+            <button class="header__contacts-button">
+                <img src="img/svg/order.svg"/>
+                4888 ₽
+            </button>
+        </div>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <div class="main__content-wrapper">
+
+        <section class="status__order">
+            <span class="status__order-item status__order-item-active">Корзина</span>
+            <img src="img/png/pseudo-line-mobile.png" class="only__mobile"/>
+            <img src="img/png/pseudo-line.png" class="only__desktop"/>
+            <span class="status__order-item">Оформление <span class="only__desktop">заказа</span></span>
+            <img src="img/png/pseudo-line-mobile.png" class="only__mobile"/>
+            <img src="img/png/pseudo-line.png" class="only__desktop"/>
+            <span class="status__order-item">Готово</span>
+        </section>
+
+        <main class="order__container">
+            <div class="order__list__wrapper">
+
+                <section class="order__section">
+                    <div class="order__image__wrapper popup__opener">
+                        <img src="img/product-pictures/image1.png" class="only__desktop"/>
+                        <img src="img/product-pictures/mobile/item1.png" class="only__mobile"/>
+                        <div class="fake__shadow only__mobile"></div>
+                    </div>
+                    <div class="order__section__content">
+                        <h3 class="order__name  popup__opener">Чизбургер барбекю</h3>
+                        <button class="delete__button only__desktop section__delete">
+                            <img src="img/svg/delete.svg"/>
+                        </button>
+                        <div class="order__description only__desktop">Соус коктейль, фарш из отборной говядины,
+                            маринованные огурцы,
+                            спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук
+                        </div>
+                        <div class="order__price">
+                            <div class="price__wrapper">
+                                <div class="price only__desktop">
+                                    <span class="price-current">930</span>
+                                    <span class="price-total price__for__one">150 ₽</span>
+                                </div>
+                                <div class="buttons__block">
+                                    <button class="button__minus">-</button>
+                                    <div class="count">2</div>
+                                    <button class="button__plus">+</button>
+                                </div>
+                                <div class="price">
+                                    <span class="price-current">1860</span>
+                                    <span class="price-total total__price__changed">300 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order__section">
+                    <div class="order__image__wrapper popup__opener">
+                        <img src="img/product-pictures/image2.png" class="only__desktop"/>
+                        <img src="img/product-pictures/mobile/image2.png" class="only__mobile"/>
+                        <div class="fake__shadow only__mobile"></div>
+                        <div class="special__promo only__desktop">NEW</div>
+                    </div>
+                    <div class="order__section__content">
+                        <h3 class="order__name  popup__opener">Суприм</h3>
+                        <button class="delete__button only__desktop section__delete">
+                            <img src="img/svg/delete.svg"/>
+                        </button>
+                        <div class="order__description only__desktop">Соус томатный, сыр моцарелла, колбаса пепперони,
+                            ветчина, лук,
+                            сладкий перец, грибной микс, свинина, говядина, оливки черные
+                        </div>
+                        <div class="order__price">
+                            <div class="price__wrapper">
+                                <div class="price only__desktop">
+                                    <span class="price-total price__for__one">690 ₽</span>
+                                </div>
+                                <div class="buttons__block">
+                                    <button class="button__minus">-</button>
+                                    <div class="count">1</div>
+                                    <button class="button__plus">+</button>
+                                </div>
+                                <div class="price">
+                                    <span class="price-total total__price__changed">690 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order__section">
+                    <div class="order__image__wrapper popup__opener">
+                        <img src="img/product-pictures/image3.png" class="only__desktop"/>
+                        <img src="img/product-pictures/mobile/image3.png" class="only__mobile"/>
+                        <div class="fake__shadow only__mobile"></div>
+                        <div class="special__promo only__desktop">NEW</div>
+                    </div>
+                    <div class="order__section__content">
+                        <h3 class="order__name  popup__opener">Бургер "Два сыра"</h3>
+                        <button class="delete__button only__desktop section__delete">
+                            <img src="img/svg/delete.svg"/>
+                        </button>
+                        <div class="order__description only__desktop">Ароматная котлета из мраморной говядины с сыром
+                            чеддер и
+                            моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и
+                            барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно
+                        </div>
+                        <div class="order__price">
+                            <div class="price__wrapper">
+                                <div class="price only__desktop">
+                                    <span class="price-total price__for__one">180 ₽</span>
+                                </div>
+                                <div class="buttons__block">
+                                    <button class="button__minus">-</button>
+                                    <div class="count">3</div>
+                                    <button class="button__plus">+</button>
+                                </div>
+                                <div class="price">
+                                    <span class="price-total total__price__changed">540 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order__section">
+                    <div class="order__image__wrapper popup__opener">
+                        <img src="img/product-pictures/image4.png" class="only__desktop"/>
+                        <img src="img/product-pictures/mobile/image4.png" class="only__mobile"/>
+                        <div class="fake__shadow only__mobile"></div>
+                        <div class="special__promo only__desktop">NEW</div>
+                    </div>
+                    <div class="order__section__content">
+                        <h3 class="order__name  popup__opener">Суши Унаги</h3>
+                        <button class="delete__button only__desktop section__delete">
+                            <img src="img/svg/delete.svg"/>
+                        </button>
+                        <div class="order__description only__desktop">Угорь
+                        </div>
+                        <div class="order__price">
+                            <div class="price__wrapper">
+                                <div class="price only__desktop">
+                                    <span class="price-total price__for__one">120 ₽</span>
+                                </div>
+                                <div class="buttons__block">
+                                    <button class="button__minus">-</button>
+                                    <div class="count">10</div>
+                                    <button class="button__plus">+</button>
+                                </div>
+                                <div class="price">
+                                    <span class="price-total total__price__changed">1200 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order__section">
+                    <div class="order__image__wrapper popup__opener">
+                        <img src="img/product-pictures/image5.png" class="only__desktop"/>
+                        <img src="img/product-pictures/mobile/image5.png" class="only__mobile"/>
+                        <div class="special__promo only__desktop">NEW</div>
+                        <div class="fake__shadow only__mobile"></div>
+                    </div>
+                    <div class="order__section__content">
+                        <h3 class="order__name  popup__opener">Умэ</h3>
+                        <button class="delete__button only__desktop section__delete">
+                            <img src="img/svg/delete.svg"/>
+                        </button>
+                        <div class="order__description only__desktop">Лосось, угорь, сыр «Филадельфия», авокадо
+                        </div>
+                        <div class="order__price">
+                            <div class="price__wrapper">
+                                <div class="price only__desktop">
+                                    <span class="price-current">420</span>
+                                    <span class="price-total price__for__one">385 ₽</span>
+                                </div>
+                                <div class="buttons__block">
+                                    <button class="button__minus">-</button>
+                                    <div class="count">2</div>
+                                    <button class="button__plus">+</button>
+                                </div>
+                                <div class="price">
+                                    <span class="price-current only__desktop">840</span>
+                                    <span class="price-total total__price__changed">770 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="present__mobile__wrapper only__mobile">
+                    <h2>Подарки</h2>
+                    <section class="order__section">
+                        <div class="order__image__wrapper popup__opener">
+                            <img src="img/product-pictures/mobile/image6.png"/>
+                            <div class="fake__shadow only__mobile"></div>
+                        </div>
+                        <div class="order__section__content">
+                            <h3 class="order__name  popup__opener">Морс "Смородина"</h3>
+                            <button class="delete__button mobile__delete__button section__delete">
+                                <img src="img/svg/close-svg-mobile.svg"/>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="order__price__wrapper">
+                <div class="order__price-description">
+                    <h3 class="order__price-description--points">+358 баллов</h3>
+                    <div class="order__price-description--description">Баллы начисляются в течении двух дней и доступны
+                        для использования при заказе от 500 руб. Только для зарегистрированных пользователей.
+                    </div>
+                    <div class="order__price-description--description">Зарегистрируйтесь или войдите.</div>
+                </div>
+                <div class="order__price-points">
+                    <h3 class="order__price-description--points order__price-description-promo">Промокод</h3>
+                    <input class="input__promo" placeholder="Введите промокод"/>
+                    <div class="button__next__wrapper">
+                        <button class="button__next">Применить</button>
+                    </div>
+                </div>
+                <div class="order__price-total">Сумма заказа:
+                    <span class="order__price-total--prev">4200</span>
+                    <span class="order__price-total--current">3580 ₽</span>
+                </div>
+                <button class="order__price-next">Далее</button>
+            </div>
+
+        </main>
+
+        <div class="presents__wrapper only__desktop">
+            <h2 class="header__section">Подарки</h2>
+            <section class="order__section">
+                <div class="order__image__wrapper  popup__opener">
+                    <img src="img/product-pictures/image6.png"/>
+                    <div class="special__promo present only__desktop">Подарок</div>
+                </div>
+                <div class="order__section__content">
+                    <h3 class="order__name  popup__opener">Морс "Смородина"</h3>
+                    <button class="delete__button section__delete">
+                        <img src="img/svg/delete.svg"/>
+                    </button>
+                    <div class="order__description">Морс "Смородина", 1л
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="recommended only__desktop">
+            <h2 class="header__section">Рекомендуем</h2>
+            <div class="recommended__products__wrapper">
+                <div class="recommended__product">
+                    <img src="img/product-pictures/recommended-pictures/image1.png" class="popup__opener"/>
+                    <div class="recommended__product-about">
+                        <h4 class="popup__opener">Чизбургер барбекю</h4>
+                        <div class="recommended__product-description">Соус коктейль, фарш из отборной говядины,
+                            маринованные огурцы, спелые томаты, сыр
+                            моцарелла,
+                            сыр чеддер, соус барбекю, хрустящий лук
+                        </div>
+                        <div class="button__next__wrapper">
+                            <button class="add__item">от 287 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended__product">
+                    <img src="img/product-pictures/recommended-pictures/image2.png" class="popup__opener"/>
+                    <div class="special__promo only__desktop">NEW</div>
+                    <div class="recommended__product-about">
+                        <h4 class="popup__opener">Бургер «Два сыра»</h4>
+                        <div class="recommended__product-description">Ароматная котлета из мраморной говядины с сыром
+                            чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом
+                            коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно
+                        </div>
+                        <div class="button__next__wrapper">
+                            <button class="add__item">387 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended__product">
+                    <img src="img/product-pictures/recommended-pictures/image3.png" class="popup__opener"/>
+                    <div class="special__promo only__desktop">NEW</div>
+                    <div class="recommended__product-about">
+                        <h4 class="popup__opener">Суши Эби</h4>
+                        <div class="recommended__product-description">Креветка
+                        </div>
+                        <div class="button__next__wrapper">
+                            <button class="add__item">130 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended__product">
+                    <img src="img/product-pictures/recommended-pictures/image4.png" class="popup__opener"/>
+                    <div class="recommended__product-about">
+                        <h4 class="popup__opener">Чизбургер барбекю</h4>
+                        <div class="recommended__product-description">Соус коктейль, фарш из отборной говядины,
+                            маринованные огурцы, спелые томаты, сыр
+                            моцарелла,
+                            сыр чеддер, соус барбекю, хрустящий лук
+                        </div>
+                        <div class="button__next__wrapper">
+                            <button class="add__item">от 287 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended__product">
+                    <img src="img/product-pictures/recommended-pictures/image2.png" class="popup__opener"/>
+                    <div class="special__promo only__desktop">NEW</div>
+                    <div class="recommended__product-about">
+                        <h4 class="popup__opener">Бургер «Два сыра»</h4>
+                        <div class="recommended__product-description ">Ароматная котлета из мраморной говядины с сыром
+                            чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом
+                            коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно
+                        </div>
+                        <div class="button__next__wrapper">
+                            <button class="add__item">387 ₽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="only__desktop"/>
+
+        <div class="footer__price only__desktop">
+            <div class="total__price">
+                <span class="total__price-text">Сумма заказа: <s>4200</s> 3580 ₽</span>
+            </div>
+            <button class="order__price-next">Далее</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__links__wrapper">
+            <div class="footer__links__list">
+                <ul>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Барное меню</a></li>
+                    <li><a href="#">Ресторан</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Блюда за баллы</a></li>
+                </ul>
+            </div>
+            <div class="footer__links__list">
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Маленький кондитер</a></li>
+                    <li><a href="#">Подарочные карты</a></li>
+                </ul>
+            </div>
+            <div class="footer__links__list">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__other">
+            <div class="footer__cards">
+                <a href="#"><img src="img/svg/cards.svg"/></a>
+                <a href="#"><img src="img/png/GooglePlay.png"/></a>
+                <a href="#"><img src="img/png/AppStore.png"/></a>
+            </div>
+            <div class="footer__copyright">
+                <span>2004 - 2020 © Vivat Pizza. <a href="#" class="footer__copyright-link">Договор публичной оферты</a> Использование материалов с сайта без нашего ведома незаконно</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!--Popup-->
+<div class="popup popup__closer only__desktop">
+
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__product">
+                <img src="img/product-pictures/popup-image/image1.png"/>
+                <div class="popup__product-wrapper">
+                    <div class="popup__product-toggle">
+                        <button class="popup__product-toggle--item">
+                            <span>Большая <span class="item__size">(36 см)</span></span>
+                        </button>
+                        <button class="popup__product-toggle--item toggle__item-active">
+                            <span>Средняя <span class="item__size">(31 см)</span></span>
+                        </button>
+                        <button class="popup__product-toggle--item">
+                            <span>Маленькая <span class="item__size">(20 см)</span></span>
+                        </button>
+                    </div>
+                    <div class="popup__product-toggle">
+                        <button class="popup__product-toggle--item toggle__item-active">
+                            <span>Тонкое <span class="item__size">(565 г)</span></span>
+                        </button>
+                        <button class="popup__product-toggle--item">
+                            <span>Пышное <span class="item__size">(820 г)</span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__description">
+                <h3 class="popup__description-header">Чизбургер барбекю</h3>
+                <span class="popup__description-description">Состав: Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук.
+На 100 г. продукта:
+K – 79.8 ккал;  Б – 2.4 г;  Ж – 5.4 г;  У – 5.4 г</span>
+                <div class="popup__description-add">Добавить ингредиенты</div>
+                <div class="popup__description-ingredients--wrapper">
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/plus.svg"/>
+                        </button>
+                        <span>Говядина варёно-копчёная 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>70 ₽</span>
+                            <img src="img/product-pictures/ingredients/image1.png"/>
+                            <span>0 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/checked.svg"/>
+                        </button>
+                        <span>Филе копченого цыпленка, 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>1 x <br>77 ₽</span>
+                            <img src="img/product-pictures/ingredients/image2.png"/>
+                            <span>77 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/checked.svg"/>
+                        </button>
+                        <span>Фарш из мраморной говядины, 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>2 x <br>99 ₽</span>
+                            <img src="img/product-pictures/ingredients/image3.png"/>
+                            <span>198 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/plus.svg"/>
+                        </button>
+                        <span>Карбонад из свинины, 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>2 x <br>70 ₽</span>
+                            <img src="img/product-pictures/ingredients/image4.png"/>
+                            <span>140 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/plus.svg"/>
+                        </button>
+                        <span>Карбонад из свинины, 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>2 x <br>70 ₽</span>
+                            <img src="img/product-pictures/ingredients/image4.png"/>
+                            <span>140 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients__add-wrapper">
+                        <button class="ingredients__add-button">
+                            <img src="img/svg/plus.svg"/>
+                        </button>
+                        <span>Говядина варёно-копчёная 50 г</span>
+                        <div class="ingredient__wrapper">
+                            <span>70 ₽</span>
+                            <img src="img/product-pictures/ingredients/image4.png"/>
+                            <span>0 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup__description-button popup__closer">В корзину • <span>940</span> • 659 ₽</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="popup.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
